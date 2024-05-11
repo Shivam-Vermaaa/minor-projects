@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index ejs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900">
+        
+        <div class="forms text-white pt-10">
+            <form action="/update" method="post">
+                <input class="block w-1/4 rounded-lg px-5 outline-none py-3 bg-zinc-800 m-3" type="text" name="previous" id="" value="<%= filename %>" placeholder=" Previous Title">
+                <input class="block w-1/4 rounded-lg px-5 outline-none py-3 bg-zinc-800 m-3" type="text" name="new" id="" placeholder=" New Title goes here">
+               <input class="mt-3 bg-yellow-600 p-2 rounded-lg cursor-pointer ml-3" type="submit" value="Update file name">
+            </form>
+        </div> 
+    </div>
+    
+</body>
+</html>
